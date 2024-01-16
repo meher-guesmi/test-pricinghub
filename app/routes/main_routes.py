@@ -1,5 +1,6 @@
 from flask import jsonify, request
 from app import app
+from data_processing.pipeline import main_pipeline
 
 @app.route('/api/calculate_price_difference', methods=['POST'])
 def api_calculate_price_difference():
@@ -10,7 +11,7 @@ def api_calculate_price_difference():
         percent_threshold = request_data.get('percent_threshold')
         euro_threshold = request_data.get('euro_threshold')
 
-        results = [calculation_type, percent_threshold, euro_threshold]
+        results = main_pipeline(calculation_type, percent_threshold, euro_threshold)
 
         return jsonify(results)
 
