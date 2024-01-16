@@ -1,4 +1,4 @@
-6.**Access the API:**
+## Setup
 
 1.**Clone the repository:**
 
