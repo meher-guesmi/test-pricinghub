@@ -1,6 +1,16 @@
 from .data_processing import *
 
 def main_pipeline(calculation_type, percent_threshold, euro_threshold):
+    """This is the main pipeline to read data and calculate the price difference based on thresholds
+
+    Args:
+        calculation_type (string): Type of calculation, either "last_two_dates" or "first_last_dates"
+        percent_threshold (float): Percentage threshold for price difference
+        euro_threshold (float): Euro threshold for price difference
+
+    Returns:
+        _type_: dict
+    """
     file_path = r".\data.csv"
 
     df = read_data(file_path)
