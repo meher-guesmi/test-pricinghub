@@ -1,32 +1,30 @@
-# Setup
+6.**Access the API:**
 
 1.**Clone the repository:**
 
-    ``git clone https://github.com/meher-guesmi/pricinghub.git     ``
+    ``bash     git clone https://github.com/yourusername/pricinghub.git     ``
 
 2.**Create a virtual environment:**
 
-    ``python -m venv venv     ``
+    ``bash     python -m venv venv     ``
 
 3.**Activate the virtual environment:**
 
     - On Windows:
 
-    ``venv\Scripts\activate``
+    ``bash       venv\Scripts\activate       ``
 
     - On Unix or MacOS:
 
-    ``source venv/bin/activate``
+    ``bash       source venv/bin/activate       ``
 
 4.**Install dependencies:**
 
-    ``pip install -r requirements.txt``
+    ``bash     pip install -r requirements.txt     ``
 
 5.**Run the application:**
 
-    ``python run.py``
-
-6.**Access the API:**
+    ``bash     python run.py     ``
 
 Open your web browser or API testing tool and navigate to [http://localhost:5000/api/calculate_price_difference](http://localhost:5000/api/calculate_price_difference) with a POST request.
 
