@@ -9,7 +9,7 @@ def main_pipeline(calculation_type, percent_threshold, euro_threshold):
         euro_threshold (float): Euro threshold for price difference
 
     Returns:
-        _type_: dict
+        dict: A dictionary with product id as key and price difference as value
     """
     file_path = r".\data.csv"
 
